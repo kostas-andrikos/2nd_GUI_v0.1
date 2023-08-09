@@ -1,0 +1,46 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.openAuxMdb(pathName=
+    'C:/Users/KonstantinosAndrikos/icomatGit/AbqsGUI_v0.0.2 - Copy/mesh_2sets.cae')
+mdb.copyAuxMdbModel(fromName='Model-1', toName='Model-1')
+mdb.copyAuxMdbModel(fromName='Model-1', toName='Model-1')
+mdb.closeAuxMdb()
+mdb.models['Model-1'].rootAssembly.regenerate()
+del mdb.models['Model-1'].parts['PART-1'].compositeLayups['CTS_LAYUP']
+# Save by KonstantinosAndrikos on 2023_08_09-17.14.11; build 2023 2022_09_28-21.11.55 183150
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.saveAs(pathName='C:/Users/KonstantinosAndrikos/icomatGit/AbqsGUI_v0.0.2 - Copy/mesh_2sets.cae')
+del mdb.models['Model-1'].discreteFields['PART-1_THICK1']
+del mdb.models['Model-1'].discreteFields['PART-1_THICK2']
+del mdb.models['Model-1'].discreteFields['PART-1_THICK3']
+del mdb.models['Model-1'].discreteFields['PART-1_THICK4']
+del mdb.models['Model-1'].discreteFields['PART-1_VAT1']
+del mdb.models['Model-1'].discreteFields['PART-1_VAT2']
+del mdb.models['Model-1'].discreteFields['PART-1_VAT3']
+del mdb.models['Model-1'].discreteFields['PART-1_VAT4']
+# Save by KonstantinosAndrikos on 2023_08_09-17.14.25; build 2023 2022_09_28-21.11.55 183150
+# Save by KonstantinosAndrikos on 2023_08_09-17.14.29; build 2023 2022_09_28-21.11.55 183150
